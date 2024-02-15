@@ -1,5 +1,7 @@
 package org.example;
-
+import org.example.Bicicleta;
+import org.example.Coche;
+import org.example.Vehiculo;
 import java.util.Scanner;
 
 public class herencia {
@@ -38,13 +40,13 @@ public class herencia {
                     coche.recorrer(km);
                     break;
                 case 3:
-                    System.out.println("La bicicleta ha recorrido " + bici.kilometrosRecorridos + " km");
+                    System.out.println("La bicicleta ha recorrido " + bici.getKilometrosRecorridos() + " km");
                     break;
                 case 4:
-                    System.out.println("El coche ha recorrido " + coche.kilometrosRecorridos + " km");
+                    System.out.println("El coche ha recorrido " + coche.getKilometrosRecorridos() + " km");
                     break;
                 case 5:
-                    System.out.println("Los vehículos han recorrido un total de " + Vehiculo.kilometrosTotales + " km");
+                    System.out.println("Los vehículos han recorrido un total de " + Vehiculo.getKilometrosTotales() + " km");
                     break;
                 case 6:
                     bici.hacerCaballito();
